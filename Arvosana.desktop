@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=Arvosana
+Exec=Arvosana
+Name=Arvosana
+# translation example:
+# your app name in German locale (de)
+#Name[ge]=Arvosana
