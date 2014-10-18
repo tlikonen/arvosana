@@ -5,7 +5,7 @@ Arvosanataulukko
 Kuvaus
 ------
 
-Arvosanataulukkolaskuri [Sailfish OS][] -käyttöjärjestelmälle
+Arvosanataulukkolaskuri [Sailfish][]-käyttöjärjestelmälle
 ([Jolla][]-puhelimeen). Ohjelma laskee annetuista lähtöarvoista
 arvosanataulukon, jota opettaja voi käyttää esimerkiksi kokeiden
 arvioinnissa.
