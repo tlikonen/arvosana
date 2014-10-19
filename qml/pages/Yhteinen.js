@@ -77,9 +77,10 @@ function laske_taulukko(suurin, pienin,
         for (var i = maksimi;; i -= vali) {
             pisteet = Math.max(0, i);
             prosentti = pisteet / maksimi * 100;
-            rivit.push([desimaalipilkku(pyorista(pisteet, 2)),
+            rivit.push([desimaalipilkku(pyorista(pisteet, 1)),
                         arvosana(pisteet, maksimi, kas, kp, s, p),
-                       prosentti >= kynnysprosentti]);
+                        desimaalipilkku(pyorista(prosentti, 1)),
+                        prosentti >= kynnysprosentti]);
             if (i <= 0) break;
         }
         taulukko = rivit;

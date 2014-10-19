@@ -18,14 +18,19 @@ Page {
             width: parent.width
             height: Theme.itemSizeLarge
             Label {
-                width: parent.width / 2
+                width: parent.width / 3
                 color: Theme.highlightColor
                 text: "Pisteet"
             }
             Label {
-                width: parent.width / 2
+                width: parent.width / 3
                 color: Theme.highlightColor
                 text: "Arvosana"
+            }
+            Label {
+                width: parent.width / 3
+                color: Theme.highlightColor
+                text: "%"
             }
         }
 
@@ -37,14 +42,19 @@ Page {
                 width: parent.width
                 height: Theme.itemSizeSmall * 0.8
                 Label {
-                    width: parent.width / 2
+                    width: parent.width / 3
                     text: modelData[0]
-                    color: modelData[2] ? Theme.primaryColor : Theme.secondaryColor
+                    color: modelData[3] ? Theme.primaryColor : Theme.secondaryColor
                 }
                 Label {
-                    width: parent.width / 2
+                    width: parent.width / 3
                     text: modelData[1]
-                    color: modelData[2] ? Theme.primaryColor : Theme.secondaryColor
+                    color: modelData[3] ? Theme.primaryColor : Theme.secondaryColor
+                }
+                Label {
+                    width: parent.width / 3
+                    text: modelData[2]
+                    color: modelData[3] ? Theme.primaryColor : Theme.secondaryColor
                 }
             }
             VerticalScrollDecorator {}
