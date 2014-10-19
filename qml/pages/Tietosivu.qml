@@ -72,7 +72,7 @@ Page {
             spacing: Theme.paddingSmall
 
             PageHeader {
-                title: qsTr("Taulukon lähtötiedot")
+                title: "Taulukon lähtötiedot"
             }
 
             Grid {
@@ -103,9 +103,12 @@ Page {
             Button {
                 text: "Näytä taulukko"
                 onClicked: {
-                    if(Yhteinen.laske_taulukko(suurin.text, pienin.text,
-                                   kynnysarvosana.text, kynnysprosentti.text,
-                                   maksimipisteet.text, pistevali.text)) {
+                    if(Yhteinen.laske_taulukko(suurin.text,
+                                               pienin.text,
+                                               kynnysarvosana.text,
+                                               kynnysprosentti.text,
+                                               maksimipisteet.text,
+                                               pistevali.text)) {
                         virhe.text = "";
                         pageStack.push(Qt.resolvedUrl("Taulukko.qml"));
                     } else {

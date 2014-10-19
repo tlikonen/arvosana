@@ -20,7 +20,6 @@ oletusarvot):
 - maksimipisteet (30)
 - pisteväli (1).
 
-
 [Sailfish]: https://sailfishos.org/
 [Jolla]:    http://jolla.com/
 
