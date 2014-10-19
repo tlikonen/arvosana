@@ -1,5 +1,6 @@
 .pragma library
 var taulukko = null;
+var kanta = null;
 
 function kouluarvosana(luku) {
     var neli = Math.round(4 * luku) / 4;
