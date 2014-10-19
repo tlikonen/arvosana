@@ -24,7 +24,9 @@ OTHER_FILES += qml/Arvosana.qml \
     Arvosana.desktop \
     qml/pages/Taulukko.qml \
     qml/pages/Tietosivu.qml \
-    qml/pages/Yhteinen.js
+    qml/pages/Yhteinen.js \
+    qml/pages/Tietoavain.qml \
+    qml/pages/Tietoarvo.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

@@ -31,95 +31,23 @@ Page {
                 rowSpacing: 0
                 spacing: 0
 
-                Label {
-                    text: "Suurin arvosana"
-                    width: page.leveys_tieto
-                }
+                Tietoavain { text: "Suurin arvosana"; }
+                Tietoarvo { id: suurin; text: "10"; }
 
-                TextField {
-                    id: suurin
-                    text: "10"
-                    width: page.leveys_kentta
-                    //validator: DoubleValidator {}
-                    inputMethodHints: Qt.ImhFormattedNumbersOnly
-                    EnterKey.enabled: text.length > 0
-                    EnterKey.onClicked: { focus = false; virhe.text = ""; }
-                }
+                Tietoavain { text: "Pienin arvosana"; }
+                Tietoarvo { id: pienin; text: "4"; }
 
-                Label {
-                    text: "Pienin arvosana"
-                    width: page.leveys_tieto
-                }
+                Tietoavain { text: "Kynnysarvosana"; }
+                Tietoarvo { id: kynnysarvosana; text: "4,75"; }
 
-                TextField {
-                    id: pienin
-                    text: "4"
-                    width: page.leveys_kentta
-                    //validator: DoubleValidator {}
-                    inputMethodHints: Qt.ImhFormattedNumbersOnly
-                    EnterKey.enabled: text.length > 0
-                    EnterKey.onClicked: { focus = false; virhe.text = ""; }
-                }
+                Tietoavain { text: "Kynnysprosentti"; }
+                Tietoarvo { id: kynnysprosentti; text: "25"; }
 
-                Label {
-                    text: "Kynnysarvosana"
-                    width: page.leveys_tieto
-                }
+                Tietoavain { text: "Maksimipisteet"; }
+                Tietoarvo { id: maksimipisteet; text: "30"; }
 
-                TextField {
-                    id: kynnysarvosana
-                    text: "4,75"
-                    width: page.leveys_kentta
-                    //validator: DoubleValidator {}
-                    inputMethodHints: Qt.ImhFormattedNumbersOnly
-                    EnterKey.enabled: text.length > 0
-                    EnterKey.onClicked: { focus = false; virhe.text = ""; }
-                }
-
-                Label {
-                    text: "Kynnysprosentti"
-                    width: page.leveys_tieto
-                }
-
-                TextField {
-                    id: kynnysprosentti
-                    text: "25"
-                    width: page.leveys_kentta
-                    //validator: DoubleValidator {}
-                    inputMethodHints: Qt.ImhFormattedNumbersOnly
-                    EnterKey.enabled: text.length > 0
-                    EnterKey.onClicked: { focus = false; virhe.text = ""; }
-                }
-
-                Label {
-                    text: "Maksimipisteet"
-                    width: page.leveys_tieto
-                }
-
-                TextField {
-                    id: maksimipisteet
-                    text: "30"
-                    width: page.leveys_kentta
-                    //validator: DoubleValidator {}
-                    inputMethodHints: Qt.ImhFormattedNumbersOnly
-                    EnterKey.enabled: text.length > 0
-                    EnterKey.onClicked: { focus = false; virhe.text = ""; }
-                }
-
-                Label {
-                    text: "Pisteväli"
-                    width: page.leveys_tieto
-                }
-
-                TextField {
-                    id: pistevali
-                    text: "1"
-                    width: page.leveys_kentta
-                    //validator: DoubleValidator {}
-                    inputMethodHints: Qt.ImhFormattedNumbersOnly
-                    EnterKey.enabled: text.length > 0
-                    EnterKey.onClicked: { focus = false; virhe.text = ""; }
-                }
+                Tietoavain { text: "Pisteväli"; }
+                Tietoarvo { id: pistevali; text: "1"; }
             }
 
             Button {
