@@ -59,7 +59,7 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        anchors.margins: Theme.paddingMedium
+        anchors.margins: Theme.paddingLarge
         contentHeight: page.height * 1.15
 
         VerticalScrollDecorator {}
@@ -67,7 +67,7 @@ Page {
         Column {
             id: column
 
-            width: page.width
+            width: parent.width
             anchors.fill: parent
             spacing: Theme.paddingSmall
 
